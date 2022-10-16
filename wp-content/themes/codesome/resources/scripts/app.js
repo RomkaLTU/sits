@@ -18,7 +18,7 @@ const main = async (err) => {
 
   const swiper = new Swiper('.swiper', {
     modules: [Navigation, EffectFade],
-    loop: true,
+    loop: false,
     effect: 'fade',
     fadeEffect: {
       crossFade: true

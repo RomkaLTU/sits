@@ -1,5 +1,5 @@
 <header x-data="{ menuShow: false }" class="">
-  <div class="container py-6">
+  <div class="container py-6 !max-w-[1400px]">
     <div @click.outside="menuShow = false" class="flex items-center justify-between">
       <div class="flex md:space-x-20 items-center">
         <a class="block max-w-[140px] sm:max-w-[175px]" href="{{ home_url('/') }}">

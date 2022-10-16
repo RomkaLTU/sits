@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth
+}
+
 body {
   @apply font-roboto text-black;
 }
@@ -70,6 +74,10 @@ body {
 .swiper-button-prev {
   left: 0;
   margin-left: -2rem;
+}
+
+.swiper-button-disabled {
+  @apply !opacity-0;
 }
 
 .section-contacts {
