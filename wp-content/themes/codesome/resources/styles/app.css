@@ -71,3 +71,26 @@ body {
   left: 0;
   margin-left: -2rem;
 }
+
+.section-contacts {
+  .wpforms-field-label {
+    @apply text-gray-1 !text-sm !font-normal;
+  }
+
+  label.wpforms-error {
+    @apply !text-red-1 !text-xs !font-normal;
+  }
+
+  .wpforms-field-large {
+    @apply !bg-transparent !border-0 !text-white !pl-0 !border-b !border-gray-1 !border-opacity-25;
+  }
+
+  textarea.wpforms-field-large {
+    @apply !h-[118px];
+  }
+
+  .wpforms-submit {
+    @apply !border-0 !text-white !text-xs !font-bold !rounded-full !uppercase !px-8 !py-3 !tracking-wider;
+    background: linear-gradient(260.52deg, #1076BE -4.98%, #2393D2 48.42%, #25A7DF 96.9%) !important;
+  }
+}
