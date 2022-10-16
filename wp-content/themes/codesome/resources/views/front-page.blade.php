@@ -47,6 +47,20 @@
       </div>
     </div>
   </section>
+
+  <div class="cta-1 relative overflow-hidden my-8 lg:my-16 bg-black py-20 sm:py-24 bg-cover rounded-xl" style="background-image:url(@asset('images/carbon-1.png'))">
+    <div class="absolute left-0 top-0 w-full h-full bg-black bg-opacity-80"></div>
+    <div class="relative flex flex-col space-y-12 items-center justify-center text-white">
+      <h2 class="text-2xl sm:text-5xl xl:text-5xl leading-tight xl:leading-[4rem] font-poppins highlight text-center">
+        Enough Talk, Let's Build Something<br>
+        Fast & Secure
+      </h2>
+      <a href="/#services" class="text-xs sm:text-sm font-bold text-white px-16 py-2 border border-white rounded-full uppercase">
+        {{ __('Contact us', 'code') }}
+      </a>
+    </div>
+  </div>
+
   <section id="contacts" class="section section-contacts my-8 lg:my-16">
     <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-14 sm:gap-4 lg:gap-14 bg-black text-white bg-opacity-90 py-12 xl:py-20 rounded-xl px-4 sm:px-14 xl:px-48">
       <div class="col-span-4 lg:col-span-5">
