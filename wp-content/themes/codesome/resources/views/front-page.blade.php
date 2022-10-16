@@ -23,7 +23,7 @@
                   {{ __('More', 'code') }}
                 </a>
               </div>
-              <img src="@asset('images/nasa-Q1p7bh3SHj8-unsplash.jpg')" class="w-full h-[100vw] md:h-[55vw] max-h-[810px] object-cover" alt="" style="clip-path:url(#shape1);">
+              <img src="@asset('images/236311.png')" class="w-full h-[100vw] md:h-[55vw] max-h-[810px] object-cover" alt="" style="clip-path:url(#shape1);">
             </div>
           </div>
         </div>
@@ -44,6 +44,33 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
           </svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" class="section section-clients my-8 lg:my-16">
+    <div class="bg-white">
+      <div class="py-12 xl:px-24">
+        <div class="grid grid-cols-4 gap-4 sm:gap-8 md:grid-cols-6">
+          <div class="col-span-2 flex justify-center sm:col-span-2 lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/Red_Hat_logo.svg')" alt="">
+          </div>
+          <div class="col-span-2 flex justify-center lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/ms.png')" alt="">
+          </div>
+          <div class="col-span-2 flex justify-center lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/mikrotik.png')" alt="">
+          </div>
+          <div class="col-span-2 flex justify-center lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/gentoo.png')" alt="">
+          </div>
+          <div class="col-span-2 flex justify-center lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/debian.png')" alt="">
+          </div>
+          <div class="col-span-2 flex justify-center lg:col-span-1">
+            <img class="h-12" src="@asset('images/logos/centos.png')" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
