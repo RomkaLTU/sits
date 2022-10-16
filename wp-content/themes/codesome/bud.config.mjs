@@ -29,17 +29,25 @@ export default async (app) => {
     /**
      * Proxy origin (`WP_HOME`)
      */
-    .proxy("http://example.test")
+    .proxy("https://sits.test")
 
     /**
      * Development origin
      */
-    .serve("http://0.0.0.0:3000")
+    .serve("http://sits.test:3000")
 
     /**
      * URI of the `public` directory
      */
     .setPublicPath("/app/themes/sage/public/")
+
+    .hooks.action(`config.after`, async bud => {
+      bud.build.rules.css.setInclude([
+        bud => bud.path('@src'),
+        bud => bud.path('@modules/aos'),
+        bud => bud.path('@modules/swiper'),
+      ])
+    })
 
     /**
      * Generate WordPress `theme.json`

@@ -8,7 +8,12 @@ module.exports = {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
-      colors: {},
+      fontSize: {
+        'hero-1': '5.3125rem', // 85px
+      },
+      colors: {
+        'black': '#141515',
+      },
     },
   },
   plugins: [],

@@ -1,3 +1,73 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+  @apply font-roboto text-black;
+}
+
+.container {
+  @apply w-full max-w-[1705px] mx-auto px-2 sm:px-8;
+}
+
+.nav-primary {
+  @apply rounded-bl-xl;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 20;
+  margin-top: 6rem;
+  padding: 1rem;
+  width: 240px;
+
+  @screen md {
+    position: static;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    width: auto;
+  }
+
+  &-m {
+    @apply md:hidden;
+  }
+
+  &-d {
+    @apply hidden md:block;
+  }
+}
+
+.nav {
+  @apply flex flex-col items-end md:items-start md:flex-row md:items-center md:space-x-12 space-y-3 md:space-y-0 font-bold uppercase text-sm sm:mr-4 md:mr-0;
+}
+
+.highlight {
+  background: linear-gradient(260.52deg, #1076BE -4.98%, #2393D2 48.42%, #25A7DF 96.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.bg-custom-1 {
+  background: linear-gradient(260.52deg, #1076BE -4.98%, #2393D2 48.42%, #25A7DF 96.9%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply hidden bg-white text-black rounded-full w-16 h-16 lg:flex items-center justify-center;
+
+  &:after {
+    content: '';
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  margin-right: -2rem;
+}
+
+.swiper-button-prev {
+  left: 0;
+  margin-left: -2rem;
+}
