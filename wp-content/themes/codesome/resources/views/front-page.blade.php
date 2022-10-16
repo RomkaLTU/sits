@@ -326,7 +326,7 @@
         <div class="highlight uppercase font-bold tracking-wide text-sm sm:text-base">#{{ __('Get in touch', 'code') }}</div>
         <div class="text-3xl sm:text-4xl font-bold font-poppins tracking-wide my-4">{{ __('Let’s Say Hi', 'code') }}</div>
         <div>
-          {!! do_shortcode('[wpforms id="9" title="false"]') !!}
+          <?php echo do_shortcode("[wpforms id=" . CONTACT_FORM_ID . " title='false']") ?>
         </div>
       </div>
     </div>

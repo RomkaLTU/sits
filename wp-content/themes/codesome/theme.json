@@ -85,6 +85,11 @@
           "color": "#0f172a"
         },
         {
+          "name": "Gray 1",
+          "slug": "gray-1",
+          "color": "#a0a2a4"
+        },
+        {
           "name": "Gray 50",
           "slug": "gray-50",
           "color": "#f9fafb"
@@ -283,6 +288,11 @@
           "name": "Stone 900",
           "slug": "stone-900",
           "color": "#1c1917"
+        },
+        {
+          "name": "Red 1",
+          "slug": "red-1",
+          "color": "#ff6f6f"
         },
         {
           "name": "Red 50",
@@ -1248,6 +1258,11 @@
           "name": "9xl",
           "slug": "9xl",
           "size": "8rem"
+        },
+        {
+          "name": "hero-1",
+          "slug": "hero-1",
+          "size": "5.3125rem"
         }
       ]
     }
