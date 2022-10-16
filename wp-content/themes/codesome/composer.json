@@ -38,6 +38,9 @@
       "App\\": "app/"
     }
   },
+  "post-autoload-dump": [
+    "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+  ],
   "require": {
     "php": "^7.4|^8.0",
     "log1x/sage-directives": "^1.1",
