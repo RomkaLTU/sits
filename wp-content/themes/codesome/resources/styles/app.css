@@ -102,3 +102,7 @@ body {
     background: linear-gradient(260.52deg, #1076BE -4.98%, #2393D2 48.42%, #25A7DF 96.9%) !important;
   }
 }
+
+.wpml-ls-legacy-list-horizontal .wpml-ls-item:not(.wpml-ls-current-language) {
+  opacity: 0.4;
+}

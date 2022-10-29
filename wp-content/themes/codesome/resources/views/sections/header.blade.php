@@ -16,7 +16,8 @@
           @endif
         </div>
       </div>
-      <div class="flex space-x-2">
+      <div class="flex">
+        <?php do_action('wpml_add_language_selector'); ?>
         <button @click="menuShow = !menuShow" class="md:hidden bg-custom-1 text-white w-10 h-10 sm:w-14 sm:h-14 rounded-full flex items-center justify-center">
           <svg x-show="!menuShow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
