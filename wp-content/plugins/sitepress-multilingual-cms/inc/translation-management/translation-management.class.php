@@ -6,19 +6,18 @@
 use WPML\FP\Fns;
 use WPML\FP\Maybe;
 use WPML\FP\Obj;
-use WPML\FP\Relation;
 use WPML\LIB\WP\User;
+use WPML\Setup\Option;
+use WPML\TM\API\Basket;
 use WPML\TM\API\Batch;
 use WPML\TM\API\Jobs;
 use WPML\TM\Jobs\Dispatch\BatchBuilder;
-use WPML\TM\Jobs\Dispatch\Posts;
-use WPML\TM\Jobs\Dispatch\Packages;
 use WPML\TM\Jobs\Dispatch\Messages;
-use WPML\TM\API\Basket;
+use WPML\TM\Jobs\Dispatch\Packages;
+use WPML\TM\Jobs\Dispatch\Posts;
 use WPML\UIPage;
 use function WPML\Container\make;
 use function WPML\FP\invoke;
-use WPML\Setup\Option;
 use function WPML\FP\partialRight;
 
 /**
@@ -1671,6 +1670,11 @@ class TranslationManagement {
 	 */
 	private function get_translation_job_info( $trid ) {
 		global $wpdb;
+
+		// Cache key must be integer or non-empty string, WP_Object_Cache::get will crash with empty $trid.
+		if( ! $trid ) {
+			return [];
+		}
 
 		$found    = false;
 		$cache    = $this->cache_factory->get( 'TranslationManagement::get_translation_job_id' );
